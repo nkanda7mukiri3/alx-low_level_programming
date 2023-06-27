@@ -7,7 +7,6 @@
 void puts2(char *str)
 {
 	int l = 0;
-	int m = 0;
 	char *n = str;
 	int o;
 
@@ -17,13 +16,12 @@ void puts2(char *str)
 		l++;
 	}
 
-	m = l - 1;
-	for (o = 0; o <= m; o++)
+	for (o = 0; o < l; o++)
 	{
 		if (o % 2 == 0)
-	{
-		_putchar(str[0]);
-	}
+		{
+			_putchar(str[0]);
+		}
 	}
 	_putchar('\n');
 }
