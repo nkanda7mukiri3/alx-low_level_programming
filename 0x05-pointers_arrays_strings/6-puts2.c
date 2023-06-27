@@ -16,7 +16,7 @@ void puts2(char *str)
 		l++;
 	}
 
-	for (o = 0; o <= l; o++)
+	for (o = 0; o < l; o++)
 	{
 		if (o % 2 == o)
 		{
