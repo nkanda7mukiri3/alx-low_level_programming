@@ -20,7 +20,7 @@ void puts2(char *str)
 	{
 		if (o % 2 == o)
 		{
-			_putchar(str[0]);
+			_putchar(str[o]);
 		}
 	}
 
