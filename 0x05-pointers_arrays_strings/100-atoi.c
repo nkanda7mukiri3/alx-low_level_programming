@@ -18,14 +18,14 @@ int _atoi(char *s)
 		if (s[i] == '-')
 			++j;
 
-		if (s[i] >= 48 && s[i] <= 57)
+		if (s[i] >= '0' && s[i] <= '9')
 		{
-			num = s[i] - 48;
+			num = s[i] - '0';
 			if (j % 2)
 				num = -num;
 			k = k * 10 + num;
 			m = 1;
-			if (s[i + 1] < 48 || s[i + 1] > 57)
+			if (s[i + 1] < '0' || s[i + 1] > '9')
 				break;
 			m = 0;
 		}
