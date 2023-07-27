@@ -9,24 +9,8 @@
 char *rot13(char *str)
 {
 	int i, j;
-	char data1[52], datarot[52];
-
-	for (i = 0; i < 26; i++)
-	{
-		data1[i] = 'A' + i;
-	}
-	for (i = 0; i < 26; i++)
-	{
-		data1[i + 26] = 'a' + i;
-	}
-	for (j = 0; j < 26; j++)
-	{
-		datarot[j] = 'A' + (j + 13) % 26;
-	}
-	for (j = 0; j < 26; j++)
-	{
-		datarot[j + 26] = 'a' + (j + 13) % 26;
-	}
+	char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
