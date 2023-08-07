@@ -18,11 +18,13 @@ int create_file(const char *filename, char *text_content)
 
 	if (text_content != NULL)
 	{
-		for (length = 0; text_content[length] != '\0';)
-			length++;
+		for (length = 0; text_content[length] != '\0'; length++)
+		{
+
+		}
 	}
 
-	fileD = open(filename, O_CREAT | O_RDWR | O_TRUNC, FILE_PERMISSIONS);
+	fileD = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	w = write(fileD, text_content, length);
 
 	if (fileD == -1 || w == -1)
