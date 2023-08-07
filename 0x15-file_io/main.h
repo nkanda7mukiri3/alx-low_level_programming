@@ -2,8 +2,6 @@
 #define MAIN_H
 
 #include <fcntl.h>
-#define FILE_PERMISSIONS (S_IRUSR | S_IWUSR)
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
